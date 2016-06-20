@@ -8,21 +8,27 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kr.hs.emirim.sinyh104.myfirstownapp.MainActivity"
-    android:orientation="vertical"
     >
 
-    <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="버튼을 클릭하면 당신이 고민하고 있는 일을 해야할지 말아야할지 결정해 줍니다."
-        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="버튼을 클릭하면 당신이 고민하고 있는 일을 해야할지 말아야할지 결정해 줍니다."
+            />
 
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="@string/button"
-        android:textColor="#542f39ed"
-        />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="할까? 말까?"
+            android:textColor="#542f39ed"
+            />
+
+    </LinearLayout>
 
 </RelativeLayout>
